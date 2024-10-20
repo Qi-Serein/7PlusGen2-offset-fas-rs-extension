@@ -1,6 +1,0 @@
-id=7+gen2_offest_fas_rs_extension
-name=fas-rs extension - 7+gen2 offest
-version=v0.2.0-[Rebuild]
-versionCode=020
-author=Qi_Serein
-description=fas-rs cpu freq offset for 7+gen2,supporting latest fas-rs
