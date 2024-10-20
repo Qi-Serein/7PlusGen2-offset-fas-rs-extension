@@ -4,3 +4,4 @@ cd $SHDIR
 rm -rf output
 mkdir -p output
 cp -r module/* output
+cp main.lua output
