@@ -1,6 +1,7 @@
-id=7+gen2_offest_fas_rs_extension
-name=fas-rs extension - 7+gen2 offest
-version=v0.2.0-[Rebuild]
-versionCode=020
+id=7+gen2_offset_fas_rs_extension
+name=fas-rs extension - 7+gen2 offset
+version=v0.2.1
+versionCode=4
 author=Qi_Serein
 description=fas-rs cpu freq offset for 7+gen2,supporting latest fas-rs
+updateJson=https://raw.githubusercontent.com/Qi-Serein/7PlusGen2-offset-fas-rs-extension/main/update.json
