@@ -6,6 +6,7 @@ function load_fas(pid, pkg)
     if (pkg == "com.tencent.tmgp.sgame")
     then
         set_policy_freq_offset(4, -100000)
+        set_policy_freq_offset(7, -400000)
     elseif (pkg == "com.miHoYo.Yuanshen" or pkg == "com.miHoyo.ys.bilibili")
     then
         set_policy_freq_offset(4, 100000)
@@ -20,7 +21,8 @@ function load_fas(pid, pkg)
         set_ignore_policy(4, true)
     elseif (pkg == "com.netease.aceracer")
     then
-        set_policy_freq_offset(4, -400000)
+        set_policy_freq_offset(4, -100000)
+        set_policy_freq_offset(7, -300000)
     elseif (pkg == "com.tencent.KiHan")
     then
         set_policy_freq_offset(4, -500000)
