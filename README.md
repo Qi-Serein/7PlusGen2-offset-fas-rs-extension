@@ -13,7 +13,9 @@
 - 火影忍者
 - 使命召唤手游
 - 永劫无间
+- 穿越火线-枪战王者
+- 巅峰极速
 
 ## **申请适配**
-1. 确认设备搭载 "Snapdragon 7+Gen2 Mobile Platform"SOC并且使用最新版fas-rs调度
+1. 确认设备搭载 "Snapdragon 7+Gen2 Mobile Platform"SoC并且使用最新版fas-rs调度
 2. 游戏包名和不少于5分钟的scene帧率记录长截图
