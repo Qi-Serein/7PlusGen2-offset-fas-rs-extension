@@ -9,9 +9,9 @@ local_print() {
 }
 
 if [ "$(getprop fas-rs-installed)" = "" ]; then
-	local_print "⚠️请先安装fas-rs再安装此插件" "Please install fas-rs first"
+	local_print "请先安装fas-rs再安装此插件" "Please install fas-rs first"
 	abort
 elif [ "$(getprop ro.soc.model)" != "SM7475" ]; then
-    local_print "⚠️检测到非目标soc" "Non-Target soc detected"
+    local_print "检测到非目标soc" "Non-Target soc detected"
     abort
 fi
