@@ -15,6 +15,7 @@
 - 永劫无间
 - 穿越火线-枪战王者
 - 巅峰极速
+- 英雄联盟手游
 
 ## **申请适配**
 1. 确认设备搭载 "Snapdragon 7+Gen2 Mobile Platform"SoC并且使用最新版fas-rs调度
