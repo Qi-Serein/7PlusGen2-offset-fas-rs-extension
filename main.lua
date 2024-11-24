@@ -13,10 +13,12 @@ function load_fas(pid, pkg)
         set_policy_freq_offset(4, -100000)
     elseif (pkg == "com.miHoYo.Nap" or pkg == "com.miHoYo.Nap.bilibili")
     then
-        set_ignore_policy(4, -100000)
+	set_ignore_policy(0, true)
+        set_policy_freq_offset4, -100000)
     elseif (pkg == "com.miHoYo.hkrpg" or pkg == "com.miHoYo.hkrpg.bilibili")
     then
-        set_ignore_policy(4, -100000)
+	set_ignore_policy(0, true)
+        set_policy_freq_offset(4, -100000)
     elseif (pkg == "com.netease.aceracer")
     then
         set_policy_freq_offset(4, -100000)
@@ -38,6 +40,10 @@ function load_fas(pid, pkg)
     then
         set_policy_freq_offset(0, -200000)
         set_policy_freq_offset(4, -400000)
+    elseif (pkg == "com.tencent.lolm")
+    then
+        set_policy_freq_offset(0, -200000)
+        set_policy_freq_offset(4, -200000)
     end
 end
 
