@@ -13,10 +13,16 @@
 # limitations under the License.
 MODDIR=${0%/*}
 EXTENSIONS=/dev/fas_rs/extensions
+MOD_EXTENSIONS=/data/adb/fas-rs/extensions
 
 until [ -d $EXTENSIONS ]; do
 	sleep 1s
 done
 
 id=$(awk -F= '/id/ {print $2}' $MODDIR/module.prop)
-cp -f $MODDIR/main.lua $EXTENSIONS/${id}.lua
+
+if [ -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
+    cp -f $MODDIR/main.lua $MOD_EXTENSIONS/${id}.lua
+else
+    cp -f $MODDIR/main.lua $EXTENSIONS/${id}.lua
+fi
