@@ -15,10 +15,6 @@ MODDIR=${0%/*}
 EXTENSIONS=/dev/fas_rs/extensions
 MOD_EXTENSIONS=/data/adb/fas-rs/extensions
 
-until [ -d $EXTENSIONS ]; do
-	sleep 1s
-done
-
 id=$(awk -F= '/id/ {print $2}' $MODDIR/module.prop)
 
 if [ -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
