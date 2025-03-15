@@ -14,8 +14,17 @@
 MODDIR=${0%/*}
 EXTENSIONS=/dev/fas_rs/extensions
 MOD_EXTENSIONS=/data/adb/fas-rs/extensions
-
 id=$(awk -F= '/id/ {print $2}' $MODDIR/module.prop)
+
+if [ -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
+    until [ -d $MOD_EXTENSIONS ]; do
+    	sleep 1
+    done
+else
+    until [ -d $EXTENSIONS ]; do
+    	sleep 1
+    done
+fi
 
 if [ -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
     cp -f $MODDIR/main.lua $MOD_EXTENSIONS/${id}.lua

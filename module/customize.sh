@@ -24,11 +24,8 @@ local_print() {
 if [ "$(getprop fas-rs-installed)" = "" ] && [ ! -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
     local_print "- 请先安装fas-rs或fas-rs-mod再安装此插件" "- Please install fas-rs or fas-rs-mod first"
     abort
-elif [ "$(getprop ro.soc.model)" != "SM7475" ]; then
-    local_print "检测到非目标soc" "Non-Target soc detected"
+fi
+if [ "$(getprop ro.soc.model)" != "SM7475" ]; then
+    local_print "- 检测到非目标soc" "- Non-Target soc detected"
     abort
-elif [ "$(getprop fas-rs-installed)" = "true" ] && [ -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
-    rm -rf /data/adb/fas-rs
-    rm -f /data/fas_rs_mod*
-    local_print "- 已自动清理fas-rs-mod残留文件" "- The residual files of fas-rs-mod have been automatically cleaned up."
 fi
