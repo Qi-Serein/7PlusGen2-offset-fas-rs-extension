@@ -5,10 +5,10 @@ function load_fas(pid, pkg)
     then
         set_extra_policy_rel(0, 4, -300000, -100000)
         set_extra_policy_abs(7, 2000000, 2750000)
-    elseif (pkg == "com.tencent.tmgp.pubgmhd" or pkg == "com.rekoo.pubgm" or pkg == "com.tencent.ig")
+    elseif (pkg == "com.tencent.tmgp.pubgmhd" or pkg == "com.rekoo.pubgm" or pkg == "com.tencent.ig" or pkg == "com.vng.pubgmobile" )
     then
         set_extra_policy_rel(4, 7, -250000, -150000)
-    elseif (pkg == "com.miHoYo.Yuanshen" or pkg == "com.miHoyo.ys.bilibili")
+    elseif (pkg == "com.miHoYo.Yuanshen" or pkg == "com.miHoyo.ys.bilibili" or pkg == "com.miHoYo.GenshinImpact" )
     then
         set_extra_policy_rel(0, 4, -150000, 0)
     elseif (pkg == "com.miHoYo.Nap" or pkg == "com.miHoYo.Nap.bilibili")
@@ -46,12 +46,16 @@ function load_fas(pid, pkg)
     then
         set_extra_policy_rel(0, 4, -300000, -100000)
         set_extra_policy_abs(7, 2300000, 2800000)
-    elseif (pkg == "com.tencent.mf.uam")
+    elseif (pkg == "com.tencent.mf.uam" or pkg == "com.proximabeta.mf.uamo" )
     then
         set_extra_policy_rel(4, 7, -300000, -150000)
     elseif (pkg == "com.tencent.tmgp.dfm")
     then
-        set_extra_policy_rel(4, 7, -300000, -150000)    
+        set_extra_policy_rel(4, 7, -300000, -150000)
+    elseif (pkg == "com.netease.dwrg.nearme.gamecenter")
+    then
+        set_extra_policy_rel(0, 4, -300000, -150000)
+	set_extra_policy_rel(4, 7, -250000, -150000)
     end
 end
 
