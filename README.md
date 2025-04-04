@@ -19,6 +19,7 @@
 - 鸣潮
 - 暗区突围
 - 三角洲行动
+- 第五人格
 
 ## **申请适配**
 1. 确认设备搭载 "Snapdragon 7+Gen2 Mobile Platform" SoC并且使用最新版fas-rs调度
