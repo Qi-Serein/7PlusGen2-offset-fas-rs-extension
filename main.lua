@@ -60,6 +60,18 @@ function load_fas(pid, pkg)
     then
         set_extra_policy_rel(0, 4, -300000, -100000)
 	    set_extra_policy_rel(4, 7, -200000, -100000)
+	elseif (pkg == "com.netease.party.bilibili")
+    then
+        set_extra_policy_rel(0, 4, -300000, -200000)
+	    set_extra_policy_rel(4, 7, -300000, -150000)
+	elseif (pkg == "com.Nekootan.kfkj.android")
+    then
+        set_extra_policy_rel(0, 4, -300000, -150000)
+	    set_extra_policy_rel(4, 7, -200000, -100000)
+	elseif (pkg == "com.tencent.tmgp.speedmobile")
+    then
+        set_extra_policy_rel(0, 4, -300000, -200000)
+	    set_extra_policy_rel(4, 7, -200000, -100000)
     end
 end
 
