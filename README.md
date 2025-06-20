@@ -24,6 +24,7 @@
 - 蛋仔派对
 - 开放空间
 - QQ飞车
+- Mobile Legends: Bang Bang
 
 ## **申请适配**
 1. 确认设备搭载 "Snapdragon 7+Gen2 Mobile Platform" SoC并且使用最新版fas-rs调度
