@@ -75,8 +75,8 @@ function load_fas(pid, pkg)
 	set_extra_policy_rel(4, 7, -200000, -100000)
 	elseif (pkg == "com.mobile.legends")
     then
-        set_extra_policy_abs(7, 1100000, 1300000)
-	set_extra_policy_abs(4, 800000, 1000000)	
+        set_extra_policy_rel(0, 4, -300000,-100000)
+	set_extra_policy_rel(4, 7, -300000, -150000)	
     end
 end
 
