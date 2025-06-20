@@ -13,20 +13,21 @@ function load_fas(pid, pkg)
         set_extra_policy_rel(0, 4, -150000, 0)
     elseif (pkg == "com.miHoYo.Nap" or pkg == "com.miHoYo.Nap.bilibili")
     then
-	    set_ignore_policy(0, true)
+	set_ignore_policy(0, true)
         set_extra_policy_abs(4, 2000000, 2350000)
         set_extra_policy_rel(4, 7, -150000, 0)
     elseif (pkg == "com.miHoYo.hkrpg" or pkg == "com.miHoYo.hkrpg.bilibili")
     then
-	    set_ignore_policy(0, true)
+	set_ignore_policy(0, true)
         set_extra_policy_abs(4, 2000000, 2350000)
         set_extra_policy_rel(4, 7, -150000, 0)
     elseif (pkg == "com.netease.aceracer")
     then
-        set_extra_policy_rel(4, 7, -300000, -100000)
+	set_extra_policy_rel(4, 7, -300000, -100000)
     elseif (pkg == "com.tencent.KiHan")
     then
-        set_extra_policy_rel(0, 4, -300000, -100000)
+	set_extra_policy_abs(7, 2000000, 2350000)
+	set_extra_policy_rel(4, 7, -150000, 0)
     elseif (pkg == "com.tencent.tmgp.cod")
     then
         set_extra_policy_rel(0, 4, -250000, -100000)
@@ -55,23 +56,27 @@ function load_fas(pid, pkg)
     elseif (pkg == "com.tencent.tmgp.dwrg" or pkg == "com.netease.dwrg.nearme.gamecenter")
     then
         set_extra_policy_rel(0, 4, -300000, -150000)
-	    set_extra_policy_rel(4, 7, -250000, -150000)
+	set_extra_policy_rel(4, 7, -250000, -150000)
 	elseif (pkg == "com.netease.sky" or pkg == "com.netease.sky.bilibili")
     then
         set_extra_policy_rel(0, 4, -300000, -100000)
-	    set_extra_policy_rel(4, 7, -200000, -100000)
+	set_extra_policy_rel(4, 7, -200000, -100000)
 	elseif (pkg == "com.netease.party.bilibili")
     then
         set_extra_policy_rel(0, 4, -300000, -200000)
-	    set_extra_policy_rel(4, 7, -300000, -150000)
+	set_extra_policy_rel(4, 7, -300000, -150000)
 	elseif (pkg == "com.Nekootan.kfkj.android")
     then
         set_extra_policy_rel(0, 4, -300000, -150000)
-	    set_extra_policy_rel(4, 7, -200000, -100000)
+	set_extra_policy_rel(4, 7, -200000, -100000)
 	elseif (pkg == "com.tencent.tmgp.speedmobile")
     then
         set_extra_policy_rel(0, 4, -300000, -200000)
-	    set_extra_policy_rel(4, 7, -200000, -100000)
+	set_extra_policy_rel(4, 7, -200000, -100000)
+	elseif (pkg == "com.mobile.legends")
+    then
+        set_extra_policy_abs(7, 1100000, 1300000)
+	set_extra_policy_abs(4, 800000, 1000000)	
     end
 end
 
