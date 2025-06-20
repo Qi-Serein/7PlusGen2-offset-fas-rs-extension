@@ -1,10 +1,11 @@
 #  日志
-无
+修改部分参数
 
 **新增适配**
 - 蛋仔派对
 - 开放空间
 - QQ飞车
+- Mobile Legends: Bang Bang
 
 ## 目前适配
 - 王者荣耀
@@ -28,3 +29,4 @@
 - 蛋仔派对
 - 开放空间
 - QQ飞车
+- Mobile Legends: Bang Bang
